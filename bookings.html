@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>All Bookings</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>Booking Details</h1>
+  <table>
+    <tr><th>Name</th><th>Match</th><th>Stadium</th><th>Tickets</th></tr>
+    {% for b in bookings %}
+    <tr>                                  
+      <td>{{ b[0] }}</td>
+      <td>{{ b[1] }}</td>
+      <td>{{ b[2] }}</td>
+      <td>{{ b[3] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
+

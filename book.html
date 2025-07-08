@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Tickets</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>Booking for {{ match[1] }}</h1>
+  <form method="post">
+    <label>Your Name:</label>
+    <input type="text" name="name" required>
+    <label>Number of Tickets:</label>
+    <input type="number" name="tickets" min="1" required>
+    <button type="submit">Confirm Booking</button>
+  </form>
+</body>
+</html>
